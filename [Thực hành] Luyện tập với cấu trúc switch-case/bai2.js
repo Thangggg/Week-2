@@ -1,4 +1,4 @@
-let a = prompt('a?', '')
+let a = +prompt('a?', '')
     switch (a) {
         case 0:
             alert(0)
@@ -8,6 +8,6 @@ let a = prompt('a?', '')
             break;
         case 2:
         case 3:
-            alert("2,3");
+            alert(2,3);
             break;
     }
