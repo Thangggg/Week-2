@@ -3,7 +3,7 @@ let value = prompt("Nhập Tên");
         let pass = prompt("Nhập mật khẩu");
         if (pass == 'TheMaster') {
             alert('Welcome!');
-        } else if (pass == null) {
+        } else if (pass == "null") {
             alert('Canceled.');
         } else {
             alert('Wrong password');
