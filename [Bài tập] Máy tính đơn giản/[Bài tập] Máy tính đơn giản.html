@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:text-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Máy tính đơn giản.css">
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th colspan="4"><input type="text" id="t1" class="sizeText"></th>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="2" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="3" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="+" onclick="checkForm(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="5" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="6" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="-" onclick="checkForm(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="8" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="9" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="*" onclick="checkForm(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="C"></td>
+            <td><input type="button" value="0" onclick="checkForm(this.value)"></td>
+            <td><input type="button" value="=" onclick="ketQua(this.value)"></td>
+            <td><input type="button" value="/" onclick="checkForm(this.value)"></td>
+        </tr>
+
+
+
+    </table>
+</form>
+</body>
+<script>
+    function checkForm(value) {
+            document.getElementById('t1').value += value
+    }
+    function ketQua(value) {
+        document.getElementById('t1').value = eval(document.getElementById('t1').value);
+    }
+</script>
+</html>

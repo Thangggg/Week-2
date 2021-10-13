@@ -1,0 +1,5 @@
+table { width: auto ; height: auto ;}
+td { text-align: center; width: 50px; height: 50px }
+th { text-align: right ; width: 50px; height: 50px }
+.demo {width: 50px; height: 50px; text-align: center}
+.sizeText{ width: 250px; height: 50px}
