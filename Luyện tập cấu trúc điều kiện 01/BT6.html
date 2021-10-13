@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p>Doanh thu lớn hơn 10 triệu thưởng 10%</p>-->
+<!--<p>Doanh thu lớn hơn 5 triệu thưởng 5%</p>-->
+<!--<p>Doanh thu lớn hơn 1 triệu thưởng 1%</p>-->
+<script>
+    let number1 = +prompt("Nhập doanh tháng này của bạn");
+    if (number1 > 10000000 ){
+        alert("bạn được thưởng: " + number1/10);
+    }else if (number1 > 5000000){
+        alert("bạn được thưởng: "+ number1/20);
+    }else {
+        alert("Bạn được thưởng: "+ number1/100);
+    }
+</script>
+</body>
+</html>
