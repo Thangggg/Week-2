@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Tính lãi ngân hàng</p>
+<p>Lãi 1 tháng là 0.5%</p>
+<p>Nhập số tiền lãi và số tháng muốn gửi ( lãi nhập gốc ) </p>
+Số tiền muốn gửi : <input type="text" id="t1">
+<br>
+<br>
+Số tháng muốn gửi : <input type="text" id="t2">
+<br>
+<br>
+<input type="button" value="Tính" onclick="checkForm()">
+<p id="t3"></p>
+</body>
+<script>
+    function checkForm() {
+        let number = document.getElementById('t1').value;
+        let month = document.getElementById('t2').value;
+        let result = number*(1+0.005)**month
+            document.getElementById('t3').innerHTML = "Cả gốc và lãi của bạn là : " + result
+
+
+    }
+</script>
+</html>

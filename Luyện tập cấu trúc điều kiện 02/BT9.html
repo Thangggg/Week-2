@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h5>Kiểm tra a, b , c có phải là cạnh của một tam giác không?</h5>
+Nhập vào a <input type="text" id="t1">
+<br>
+<br>
+Nhập vào b <input type="text" id="t2">
+<br>
+<br>
+Nhập vào c <input type="text" id="t3">
+<br>
+<br>
+<input type="button" value="Kiểm Tra" onclick="checkForm()">
+<p id="t4"></p>
+</body>
+<script>
+    function checkForm() {
+       let number = +document.getElementById('t1').value;
+       let number2 = +document.getElementById('t2').value;
+       let number3 = +document.getElementById('t3').value;
+        if (number> 0 && number2> 0 && number3 > 0 &&  (number + number2 > number3 ) && ( number2 + number3 > number) && (number + number3 > number2)){
+                        document.getElementById('t4').innerHTML = "Đây là hình tam giác"
+                    }else {
+                        document.getElementById('t4').innerHTML = "Đây không phải là hình tam giác"
+                    }
+
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<p>Chương trình tính giá điện</p>
+Nhập số điện dùng trong tháng : <input type="text" id="t1">
+<br>
+<br>
+<input type="button" value="Tính Tiền" onclick="checkForm()">
+<p id="t2"></p>
+</body>
+<script>
+    function checkForm() {
+        let number = document.getElementById('t1').value;
+            if (number < 100){
+                document.getElementById('t2').innerHTML = " Tiền điện tháng này là : " + (number*3000)
+            }else if (number < 500){
+                document.getElementById('t2').innerHTML =  " Tiền điện tháng này là : " + (number*4000)
+            }else {
+                document.getElementById('t2').innerHTML =  " Tiền điện tháng này là : " + (number*5000)
+            }
+
+    }
+
+
+</script>
+</html>

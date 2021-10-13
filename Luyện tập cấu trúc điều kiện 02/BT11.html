@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Cách tính thuế TNCC</p>
+<p>5tr thu nhập bị tính thuế là 5% và phải đóng 5% tiền bị tính thuế</p>
+<p>6-10tr thu nhập bị tính thuế là 10% và phải đóng 10% tiền bị tính thuế</p>
+<p>11-18 thu nhập bị tính thuế là 15% và phải đóng 15% tiền bị tính thuế</p>
+<p>18-32 thu nhập bị tính thuế là 20% và phải đóng 20% tiền bị tính thuế</p>
+<p>32-52 thu nhập bị tính thuế là 25% và phải đóng 26% tiền bị tính thuế</p>
+<p>trên 80 thu nhập bị tính thuế là 30% và phải đóng 30% tiền bị tính thuế</p>
+Nhập thu nhập của bạn : <input type="text" id="t1">
+<input type="button" value="Tính" onclick="checkForm()">
+<p id="t2">Kết Quả : </p>
+</body>
+<script>
+    function checkForm() {
+        let number = document.getElementById('t1').value;
+        if(number < 6000000){
+            document.getElementById('t2').innerHTML = " Thuế bạn phải trả là : " + ((number/20))/20;
+        }else if (number < 10000000){
+            document.getElementById('t2').innerHTML = " Thuế bạn phải trả là : " + (number/10)/10;
+        }else if (number < 18000000){
+            document.getElementById('t2').innerHTML = " Thuế bạn phải trả là : " + (number/6)/6;
+        }else if (number < 32000000){
+            document.getElementById('t2').innerHTML = " Thuế bạn phải trả là : " + (number/5)/5;
+        }else if (number < 52000000){
+            document.getElementById('t2').innerHTML = " Thuế bạn phải trả là : " + (number/4)/4;
+        }else {
+            document.getElementById('t2').innerHTML = " Thuế bạn phải trả là : " + (number/(100/3))/(100/3);
+        }
+    }
+</script>
+</html>

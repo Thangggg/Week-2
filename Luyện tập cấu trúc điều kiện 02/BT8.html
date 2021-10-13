@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Kiểm tra số tuổi</h2>
+Nhập vào số tuổi : <input type="text" id="t1">
+<input type="button" value="Kiểm Tra" onclick="checkForm()">
+<p id="t2"></p>
+</body>
+<script>
+    function checkForm() {
+        let age = document.getElementById('t1').value;
+        if(age > 0 && age < 120){
+            document.getElementById('t2').innerHTML = " Đây là số tuổi của người "
+        }else {
+            document.getElementById('t2').innerHTML = " Thánh oyyyyy"
+        }
+    }
+</script>
+</html>

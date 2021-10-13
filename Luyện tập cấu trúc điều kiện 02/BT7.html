@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Giải phương trình bậc 2: ax^2 +bx +c = 0</h4>
+a = <input type="text" id="t1">
+<br>
+<br>
+b = <input type="text" id="t2">
+<br>
+<br>
+c = <input type="text" id="t3">
+<br>
+<br>
+<input type="button" value="Kết Quả" onclick="checkForm()">
+<h5 id="t4">Kết Quả</h5>
+</body>
+<script>
+    function checkForm() {
+        let number = +document.getElementById('t1').value;
+        let number2 = +document.getElementById('t2').value;
+        let number3 = +document.getElementById('t3').value;
+        let delta = number2 ** 2 - 4 * (number * number3)
+        if (delta < 0) {
+            document.getElementById('t4').innerHTML = " Phương trình vô nghiệm "
+        } else if (delta == 0) {
+            document.getElementById('t4').innerHTML = " Phương trình có nghiệm kép x1 = x2 = " + -number2 / number * 2
+        } else {
+            document.getElementById('t4').innerHTML = " Phương trình có 2 nghiệm " + " x1 = " +((-number2 + Math.sqrt(delta)) / 2 * number) + " x2 = " + ((-number2 - Math.sqrt(delta)) / 2 * number)
+        }
+    }
+</script>
+</html>

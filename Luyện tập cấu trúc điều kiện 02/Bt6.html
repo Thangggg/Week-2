@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Giải phương trình bậc nhất ax +b =0</h4>
+<h6>Nhập a và b</h6>
+a = <input type="text" id="t1">
+<br>
+<br>
+b = <input type="text" id="t2">
+<br>
+<br>
+<input type="button" onclick="checkForm()" value="Kết Quả">
+<h6 id="t3"></h6>
+
+</body>
+<script>
+    function checkForm() {
+        let number = +document.getElementById('t1').value;
+        let number2 = +document.getElementById('t2').value;
+        let result = number2/number
+        document.getElementById('t3').innerHTML = "X = " + result
+    }
+
+</script>
+</html>
