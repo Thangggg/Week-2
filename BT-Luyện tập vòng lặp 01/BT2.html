@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        // let number = +prompt("Nhập vào nhiệt độ hiện tại");
+        //     if (number <20){
+        //         alert("Hãy tăng nhiệt độ")
+        //     }else if (number > 100){
+        //         alert("Hãy giảm nhiệt độ")
+        //     }
+
+        let number = +prompt("Nhập vào nhiệt độ hiện tại");
+        while (number < 20 || number > 100){
+            if (number < 20){
+                alert("Hãy tăng nhiệt độ");
+                number = +prompt("Nhập vào nhiệt độ hiện tại");
+            }else if (number > 100){
+                alert("Hãy giảm nhiệt độ");
+                number = +prompt("Nhập vào nhiệt độ hiện tại");
+            }
+        }
+        alert("bình thường")
+</script>
+</body>
+</html>
