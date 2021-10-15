@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Vui lòng nhập số đầu tiên: ");
+    let number2 = +prompt("Vui lòng nhập số cuối cùng: ");
+    let luckyNumber;
+    if(number >number2){
+        luckyNumber =Math.floor(Math.random()*(number-number2 +1)) + number2;
+    } else {
+        luckyNumber = Math.floor(Math.random()*(number2-number +1)) +number;
+    }
+    for (let i=0;i<=2 ;i++){
+        let numbers = +prompt("Vui lòng nhập số dự đoán");
+        if(luckyNumber === numbers) {
+            alert("Chúc Mừng bạn đã đoán đúng !")
+            break;
+        }else {
+            if(luckyNumber> numbers){
+                alert("Bạn hãy nhập số lớn hơn !")
+            }else {
+                alert("Bạn hãy nhập số nhỏ hơn !")
+            }
+
+        }
+    }
+</script>
+</body>
+</html>
