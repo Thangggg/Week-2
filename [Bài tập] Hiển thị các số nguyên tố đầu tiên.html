@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkSNT (num){
+      if (num < 2){
+        return false
+      }else {
+        for (let i = 0; i < num; i++) {
+          if (num % i == 0){
+            return false
+          }
+        }return true
+      }
+    }
+
+    let count = 0
+    let count2 =2
+    while (count <= 20){
+      if (checkSNT(count2) === true){
+        count++
+        console.log(count2)
+
+      }
+        count2++
+    }
+</script>
+</body>
+</html>
