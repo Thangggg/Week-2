@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Fast Cheap</title>
+</head>
+<body>
+<input type="checkbox" value="good" id="good" onclick="check(this.value)">Good
+<input type="checkbox" value="fast" id="fast" onclick="check(this.value)">Fast
+<input type="checkbox" value="cheap" id="cheap" onclick="check(this.value)">Cheap
+<script>
+    function check(value) {
+        if (value == 'good') {
+            if (fast.checked && cheap.checked) {
+                cheap.checked = false;
+            }
+        } else if (value == 'cheap') {
+            if (good.checked && fast.checked) {
+                fast.checked = false;
+            }
+        } else {
+            if (good.checked && cheap.checked) {
+                good.checked = false;
+            }
+        }
+    }
+</script>
+</body>
+</html>
